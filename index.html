@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoop Kamatcho - Thrift Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Smooth Scrolling */
+        html { scroll-behavior: smooth; }
+
+        body { 
+            font-family: 'Poppins', sans-serif; 
+            margin: 0; padding: 0; 
+            background-color: #f9f9f9; 
+            color: #333; 
+            line-height: 1.6; 
+        }
+
+        header { 
+            background: linear-gradient(rgba(139, 69, 19, 0.8), rgba(139, 69, 19, 0.8)), 
+                        url('https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=800&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white; 
+            text-align: center; 
+            padding: 60px 20px; 
+        }
+
+        nav { 
+            background-color: #fff; 
+            padding: 15px; 
+            text-align: center; 
+            position: sticky; 
+            top: 0; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+
+        nav a { color: #8B4513; margin: 0 15px; text-decoration: none; font-weight: 600; transition: 0.3s; }
+        nav a:hover { color: #D2691E; }
+
+        section { padding: 60px 20px; max-width: 1000px; margin: 0 auto; }
+        
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 25px; }
+        
+        .product { 
+            border: none; 
+            padding: 20px; 
+            text-align: center; 
+            background-color: white; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover { transform: translateY(-10px); }
+        .product img { border-radius: 8px; margin-bottom: 10px; }
+
+        button { 
+            background-color: #D2691E; 
+            color: white; 
+            padding: 12px; 
+            border: none; 
+            cursor: pointer; 
+            width: 100%; 
+            border-radius: 8px; 
+            font-weight: 600; 
+            transition: 0.3s;
+        }
+        button:hover { background-color: #8B4513; transform: scale(1.02); }
+
+        footer { background-color: #222; color: #888; text-align: center; padding: 20px; font-size: 14px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="font-size: 3rem; margin: 0;">Shoop Kamatcho</h1>
+        <p style="font-size: 1.2rem; opacity: 0.9;">Sustainable Style, Second-Hand Soul.</p>
+    </header>
+    
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <section id="home">
+        <div style="text-align: center;">
+            <h2>Fresh Finds Daily</h2>
+            <p>Discover unique, pre-loved items at Shoop Kamatcho. From funky clothes to quirky accessories.</p>
+            <img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=800&q=80" alt="Store Image" style="width:100%; border-radius: 15px; margin-top: 20px;">
+        </div>
+    </section>
+    
+    <section id="products">
+        <h2 style="text-align:center; margin-bottom: 40px;">Featured Items</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="https://via.placeholder.com/200x200?text=Vintage+Tee" alt="T-Shirt">
+                <h3>Vintage T-Shirts</h3>
+                <p style="color: #D2691E; font-weight: bold;">$5.00
+                  
